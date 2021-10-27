@@ -99,11 +99,9 @@ if __name__ == "__main__":
 
         model.save("models/modelolegal")
 
-    window = deque(maxlen=SEQ_LEN)
+    window = deque(maxlen=2000)
     for time in t:
-        window.append(np.sin(time*3))
-        if(len(window) == SEQ_LEN):
-            x = np.array(window)
-            x = x.reshape(1,*x.shape,1)
-            # print(x.shape)
-            print(model.predict(x)[-1][0][0])
+        window.append(np.sin(time*10))
+        x = np.array(window)
+        x = x.reshape(1,*x.shape,1)
+        print(model.predict(x)[-1][-1])
