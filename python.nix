@@ -4,6 +4,9 @@ let
   my-python-packages = python-packages: with python-packages; [
     numpy
     tensorflow
+    scikit-learn
+    pandas
+    matplotlib
     Keras
     # other python packages you want
   ];
