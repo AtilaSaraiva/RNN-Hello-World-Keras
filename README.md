@@ -8,7 +8,12 @@ To run this example, either install all of the dependencies using pip or your OS
 nix-shell is a tool that uses the [nix package manager](https://nixos.org/) to download all of the depedencies for this code.
 It is an idea similar to that of the Docker files, but without needing to virtualize a whole OS, just a shell with the dependencies.
 
-After installing nix, just run:
+To install nix just run:
+```
+curl -L https://nixos.org/nix/install | sh
+```
+
+After installing nix, run:
 ```
 nix-shell python.nix
 python rnn.py
