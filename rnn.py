@@ -93,9 +93,9 @@ if __name__ == "__main__":
                 )
 
 
-        # score = model.evaluate(X_val, y_val, verbose=0)
-        # print('Test loss:', score[0])
-        # print('Test accuracy:', score[1])
+        score = model.evaluate(X_val, y_val, verbose=0)
+        print('Test loss:', score[0])
+        print('Test accuracy:', score[1])
 
         model.save("models/modelolegal")
 
