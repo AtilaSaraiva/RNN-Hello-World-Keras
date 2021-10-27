@@ -5,7 +5,7 @@ It tries to find whether a certain number of samples of a time series is the sin
 sin(1*t), sin(2*t) or sin(n*t). In other words, it tries to find n.
 
 To run this example, either install all of the dependencies using pip or your OS package manager, or use *nix-shell*.
-nix-shell is a tool that uses the ![nix package manager](https://nixos.org/) to download all of the depedencies for this code.
+nix-shell is a tool that uses the [nix package manager](https://nixos.org/) to download all of the depedencies for this code.
 It is an idea similar to that of the Docker files, but without needing to virtualize a whole OS, just a shell with the dependencies.
 
 After installing nix, just run:
